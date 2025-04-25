@@ -5,7 +5,7 @@ import axios from 'axios';
 
 dotenv.config();
 
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 const AIRTABLE_API_KEY = process.env.AIRTABLE_API_KEY;
 const AIRTABLE_BASE_ID = process.env.AIRTABLE_BASE_ID;
 const AIRTABLE_TABLE_NAME = process.env.AIRTABLE_TABLE_NAME;
