@@ -8,7 +8,7 @@ dotenv.config();
 
 // Configuration
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
-const WS_SERVER_URL = 'ws://localhost:8080';
+const WS_SERVER_URL = process.env.WS_SERVER_URL;
 const TARGET_THREAD_ID = 2; // Thread to monitor
 
 // Validate configuration
